@@ -1,143 +1,158 @@
-# 智囊团 MCP Server
+<div align="center">
 
-> 20位顶级专家的方法论思维，随时为你所用
+# 🌙 智囊团 MCP
 
-## 简介
+### *Wise Council —— 一场横跨东西方 2500 年的董事会*
 
-智囊团 MCP Server 是一个基于 Claude MCP 协议的专家咨询系统，集成了国内外20位顶级技术领袖的思维方式和方法论。
+[![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-7c6cf0?style=flat-square&logo=anthropic&logoColor=white)](https://modelcontextprotocol.io)
+[![Advisors](https://img.shields.io/badge/顾问-38_位-brightgreen?style=flat-square)](#-两扇窗两张桌)
+[![Day Desk](https://img.shields.io/badge/☀️_白天的董事会-22_席_事业技术-f39c12?style=flat-square)](#-白天的董事会事业之桌)
+[![Night Desk](https://img.shields.io/badge/🌙_夜晚的董事会-16_席_人生探讨-9b59b6?style=flat-square)](#-夜晚的董事会人生之桌)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#-许可证)
 
-## 参与专家
+**白天，你问张小龙怎么砍功能；夜晚，你问庄子怎么面对三十五岁的自己。**
 
-### 产品
-- **张小龙** - 腾讯，微信产品经理，"产品之神"
-- **俞军** - 百度→滴滴，用户价值公式
+**[设计哲学](#-设计哲学)** · **[快速开始](#-快速开始)** · **[圆桌流程](#️-圆桌会议流程)** · **[席位名单](#-两扇窗两张桌)**
 
-### 项目管理
-- **Mike Cohn** - Mountain Goat Software，敏捷项目管理
+</div>
 
-### 架构
-- **Martin Fowler** - ThoughtWorks，企业架构
-- **Uncle Bob (Robert C. Martin)** - 独立，整洁架构
+---
 
-### 设计
-- **Don Norman** - Apple→UCSD，UX之父
-- **Steve Krug** - 独立，《Don't Make Me Think》
+## 💡 设计哲学
 
-### 前端
-- **Evan You (尤雨溪)** - Google→独立，Vue.js
+> **Meta 花几千万美元请明星做的 AI 角色，一年就死了。**
+> 因为它卖的是"名人皮"——皮做得越像，内核越空。
 
-### 后端
-- **Linus Torvalds** - Linux Foundation，Linux/Git
-- **Guido van Rossum** - Microsoft→Dropbox，Python
+智囊团不扮演名人，只提供**方法论思维**：
 
-### 测试
-- **James Bach** - 独立，探索性测试
+| 统一 ✅ | 碰撞 ❌（绝不统一） |
+|:---|:---|
+| 话题 —— 全场只议论**你的问题** | 方法论 —— 俞军用公式，老子用比喻，Linus 用毒舌 |
+| 形式 —— 发言契约：【立场】【理由】【反问】 | 价值观 —— 张小龙求克制 × 尤雨溪求演进 |
+| 纪要 —— 共识 / 分歧 / 问题 / 行动项 | 结论 —— 分歧 = 你决策的真实风险面 |
 
-### DevOps
-- **Kelsey Hightower** - Google，Kubernetes
+**统一的是琴，碰撞的是曲。** 回音室没有价值，分歧才是你付费购买的东西。
 
-### 数据库
-- **Michael Stonebraker** - MIT，图灵奖
+---
 
-### CTO
-- **Werner Vogels** - Amazon，云计算架构
-- **王坚** - 阿里巴巴，阿里云
+## 🪟 两扇窗，两张桌
 
-### 安全
-- **Bruce Schneier** - 独立，安全教父
-- **吴翰清** - 阿里→绿盟，安全架构
+一个司仪（分诊台），自动把问题路由到正确的桌子：
 
-### 数据
-- **DJ Patil** - LinkedIn→白宫，首席数据科学家
-- **周靖人** - 阿里巴巴，大数据架构
-
-### 性能
-- **Brendan Gregg** - Netflix→Sun，性能分析
-- **杨涛** - 蚂蚁集团，Node.js性能
-
-### 技术文档
-- **阮一峰** - 独立，技术科普
-
-## 工具
-
-### 1. consult - 单角色咨询
-向单个专家咨询问题，获取其专业视角的建议。
-
-### 2. review - 多角色会诊
-邀请多位专家从不同角度评审方案，提供综合建议。
-
-### 3. brainstorm - 头脑风暴
-多位专家从不同角度发散思考，产生创新想法。
-
-### 4. critique - 设计评审
-从多个维度批判性地审视方案，找出问题和改进点。
-
-### 5. suggest - 场景建议
-根据具体场景和约束条件，给出可执行的方案建议。
-
-## 安装
-
-```bash
-cd wise-council-mcp
-npm install
-npm run build
+```mermaid
+flowchart LR
+    Q[你的问题] --> M[🤵 司仪<br/>分诊 · 点名 · 纪要]
+    M -->|产品 · 技术 · 商业| D[☀️ 白天的董事会]
+    M -->|意义 · 关系 · 焦虑 · 抉择| N[🌙 夜晚的董事会]
+    D --> O[📋 会议纪要]
+    N --> O
 ```
 
-## 配置 Claude Code
+### ☀️ 白天的董事会（事业之桌）
 
-在 `~/.claude/claude_desktop_config.json` 中添加：
+| 席位 | 顾问 | 一句话 |
+|:---|:---|:---|
+| 产品 | 张小龙 · 俞军 | "用户真的需要吗？" |
+| 设计 | Don Norman · Steve Krug | "别让用户思考" |
+| 架构 | Linus · Fowler · Uncle Bob · 尤雨溪 · Guido | "Talk is cheap" |
+| 测试 | James Bach | 探索性测试之父 |
+| 运维/云 | Kelsey Hightower · Werner Vogels · 王坚 | |
+| 数据 | Stonebraker · DJ Patil · 周靖人 | |
+| 性能 | Brendan Gregg · 杨涛 | |
+| 安全 | Bruce Schneier · 吴翰清 | |
+| 写作 | 阮一峰 | |
+
+### 🌙 夜晚的董事会（人生之桌）
+
+| 席位 | 顾问 | 独门绝活 |
+|:---|:---|:---|
+| 意义 | **弗兰克尔** · **加缪** | 集中营里写出《活出生命的意义》/ 西西弗斯的幸福 |
+| 心理 | **阿德勒** · **荣格** · **爱比克泰德** | 课题分离 / 中年转型与阴影 / 控制二分法 |
+| 东方 | **老子** · **庄子** · **王阳明** | 道法自然 / 无用之用 / 知行合一 |
+| 兵法与治理 | **孙子** · **鬼谷子** · **韩非子** | 先胜后战 / 揣摩读人 / 赏罚二柄 |
+| 生活 | **杨绛** · **史铁生** | "不要紧" / "死是一个必然会降临的节日" |
+
+### ♾️ 两桌共用（理性审计席）
+
+**卡尼曼**（认知偏差审计）+ **芒格**（逆向思维）——任何决策都逃不过这两位的审计。
+
+---
+
+## 🕵️ 圆桌会议流程
+
+```
+你提问 → 司仪分诊 → 点名 3-5 位 → 圆桌发言（各持立场，严禁趋同）→ 会议纪要
+```
+
+**真实内测示例**：
+
+> **问**：32 岁了，体制内稳定但一眼望到头，要不要裸辞去追自己想要的生活？很焦虑
+>
+> **司仪分诊**：🌙 夜晚的董事会 · 命中【焦虑内耗、职业人生】
+> **点名**：庄子 · 爱比克泰德 · 阿德勒 · 王阳明 · 荣格
+>
+> 每人一段发言（立场 / 理由 / 反问），最后输出纪要：
+> **共识 · 分歧 · 留给你的问题 · 本周行动项 · 一句收束**
+
+### 🛟 安全红线
+
+司仪内置心理危机信号识别。检测到重度痛苦信号时，纪要强制插入专业心理援助提示——**董事会提供视角，不提供心理治疗。** 这是产品的道德底线。
+
+---
+
+## 🚀 快速开始
+
+```bash
+git clone https://github.com/Dream22180971/wise-council-mcp.git
+cd wise-council-mcp
+npm install && npm run build
+```
+
+注册到 Claude Desktop / 任何 MCP 宿主：
 
 ```json
 {
   "mcpServers": {
     "wise-council": {
       "command": "node",
-      "args": ["D:\\MyCodingProject\\wise-council-mcp\\dist\\index.js"]
+      "args": ["D:/MyCodingProject/wise-council-mcp/dist/index.js"]
     }
   }
 }
 ```
 
-## 使用示例
+然后直接说：
 
-### 单角色咨询
-```
-请用consult工具咨询张小龙，关于如何设计一个社交产品的核心功能
-```
+> *"开一场圆桌：我的博客要不要加评论功能？"* —— 白天桌自动就座
+> *"开一场圆桌：要不要接受那个外地 offer"* —— 夜晚桌自动就座
 
-### 多角色会诊
-```
-请用review工具评审我的微服务架构设计方案
-```
+### 六个工具
 
-### 头脑风暴
-```
-请用brainstorm工具，围绕"如何提升用户留存率"进行头脑风暴
-```
+| 工具 | 用途 |
+|:---|:---|
+| `roundtable` ⭐ | 圆桌会议（自动分诊 + 点名 + 纪要），**日常用这个** |
+| `consult` | 单独咨询某位顾问 |
+| `review` / `critique` | 方案审查 / 犀利批评 |
+| `brainstorm` / `suggest` | 头脑风暴 / 人选推荐 |
 
-### 设计评审
-```
-请用critique工具，从架构、安全性、性能三个维度评审我的系统设计
-```
+---
 
-### 场景建议
-```
-请用suggest工具，我需要在3个月内上线一个MVP产品，团队5人，预算有限
-```
+## 🗺️ 路线图
 
-## 开发
+- [x] v1.0 —— 22 位技术专家 + 5 个工具
+- [x] v2.0 —— 夜晚桌 16 席 + 司仪分诊 + 圆桌会议
+- [ ] v2.1 —— 会议存档接入 [agent-memory-hub](https://github.com/Dream22180971/agent-memory-hub)（董事会开始记住你）
+- [ ] v3.0 —— 圆桌剧场 Web 界面 + 观点星云可视化
+- [ ] v3.x —— 决策长廊（每一次圆桌成为一间展厅，你自己的史记）
 
-```bash
-# 开发模式
-npm run dev
+---
 
-# 构建
-npm run build
+## 📄 许可证
 
-# 启动
-npm start
-```
+MIT © Dreamer
 
-## License
+<div align="center">
 
-MIT
+**白天问事业，夜晚问人生。同一个董事会，两扇窗。** 🌗
+
+</div>
