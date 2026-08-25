@@ -682,10 +682,12 @@ const dayAdvisors: Advisor[] = [
 
 // 合并白天桌（标记 desk: day）+ 夜晚桌/东方席位/共用席
 import { nightAdvisors } from "./night.js";
+import { futureSelf } from "./future-self.js";
 
 export const advisors: Advisor[] = [
   ...dayAdvisors.map((a) => ({ ...a, desk: "day" as const })),
   ...nightAdvisors,
+  futureSelf,
 ];
 
 export function getAdvisorById(id: string): Advisor | undefined {

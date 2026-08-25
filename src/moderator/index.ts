@@ -123,6 +123,18 @@ export function triage(question: string, forceDesk?: Desk): TriageResult {
     }
   }
 
+  // 3.5 第 39 席：夜晚桌永久列席"65岁的你"，压轴发言（不在点名表内，强制注入）
+  if (desk === "night") {
+    const fs = getAdvisorById("future-self");
+    if (fs) {
+      const withoutFs = picked.filter((a) => a.id !== "future-self");
+      while (withoutFs.length >= 5) withoutFs.pop();
+      withoutFs.push(fs);
+      picked.length = 0;
+      picked.push(...withoutFs);
+    }
+  }
+
   return { desk, deskReason, topicTags, advisors: picked.slice(0, 5), safetyNote };
 }
 
@@ -189,7 +201,7 @@ ${safetyNote ? `\n${safetyNote}\n` : ""}
 
 【各位顾问的人格与方法论】
 ${personas}
-${SPEAKING_RULES}
+${SPEAKING_RULES}${advisors.some((a) => a.id === "future-self") ? `7. 特别席豁免：压轴的"65岁的你"不受第 1 条【立场】格式约束——用回忆的口吻说话，但同样要简短，并以一个"留给今天的你"的追问收尾\n` : ""}
 ${MINUTES_TEMPLATE.replace("{{DESK}}", DESK_LABEL[desk])
     .replace("{{QUESTION}}", question)
     .replace("{{ATTENDEES}}", advisors.map((a) => a.name).join("、"))}

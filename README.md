@@ -5,7 +5,7 @@
 ### *Wise Council —— 一场横跨东西方 2500 年的董事会*
 
 [![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-7c6cf0?style=flat-square&logo=anthropic&logoColor=white)](https://modelcontextprotocol.io)
-[![Advisors](https://img.shields.io/badge/顾问-38_位-brightgreen?style=flat-square)](#-两扇窗两张桌)
+[![Advisors](https://img.shields.io/badge/顾问-39_位-brightgreen?style=flat-square)](#-两扇窗两张桌)
 [![Day Desk](https://img.shields.io/badge/☀️_白天的董事会-22_席_事业技术-f39c12?style=flat-square)](#-白天的董事会事业之桌)
 [![Night Desk](https://img.shields.io/badge/🌙_夜晚的董事会-16_席_人生探讨-9b59b6?style=flat-square)](#-夜晚的董事会人生之桌)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#-许可证)
@@ -71,6 +71,8 @@ flowchart LR
 | 东方 | **老子** · **庄子** · **王阳明** | 道法自然 / 无用之用 / 知行合一 |
 | 兵法与治理 | **孙子** · **鬼谷子** · **韩非子** | 先胜后战 / 揣摩读人 / 赏罚二柄 |
 | 生活 | **杨绛** · **史铁生** | "不要紧" / "死是一个必然会降临的节日" |
+
+> **🪑 第 39 席 · 永久列席**：**65 岁的你** —— 不在点名表里，却出席每一场夜晚桌。所有智者发言完毕后，未来的你压轴开口："三十年后……"。全网竞品有名人 AI、有心理陪伴，没有一个是*你自己*。
 
 ### ♾️ 两桌共用（理性审计席）
 
@@ -141,7 +143,8 @@ npm install && npm run build
 
 - [x] v1.0 —— 22 位技术专家 + 5 个工具
 - [x] v2.0 —— 夜晚桌 16 席 + 司仪分诊 + 圆桌会议
-- [ ] v2.1 —— 会议存档接入 [agent-memory-hub](https://github.com/Dream22180971/agent-memory-hub)（董事会开始记住你）
+- [x] v2.1 —— 第 39 席：65 岁的你，永久列席夜晚桌压轴发言
+- [ ] v2.2 —— 会议存档接入 [agent-memory-hub](https://github.com/Dream22180971/agent-memory-hub)（董事会开始记住你）
 - [ ] v3.0 —— 圆桌剧场 Web 界面 + 观点星云可视化
 - [ ] v3.x —— 决策长廊（每一次圆桌成为一间展厅，你自己的史记）
 
