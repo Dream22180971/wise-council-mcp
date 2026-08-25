@@ -117,7 +117,7 @@ npm install && npm run build
   "mcpServers": {
     "wise-council": {
       "command": "node",
-      "args": ["D:/MyCodingProject/wise-council-mcp/dist/index.js"]
+      "args": ["<你克隆的目录>/wise-council-mcp/dist/index.js"]
     }
   }
 }
