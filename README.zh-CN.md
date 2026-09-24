@@ -15,7 +15,7 @@
 
 ---
 
-## 它是什么
+## 🎯 它是什么
 
 Wise Council MCP 是一个 MCP Server。它不会把问题压成一个“统一答案”，而是让多个 **方法论视角** 独立看同一个问题。
 
@@ -45,7 +45,7 @@ flowchart LR
 
 ---
 
-## 快速开始
+## ⚡ 快速开始
 
 ```bash
 git clone https://github.com/Dream22180971/wise-council-mcp.git
@@ -127,7 +127,7 @@ npm start
 
 ---
 
-## 路线图
+## 🗺 路线图
 
 - [x] MCP Server 骨架
 - [x] 问题路由
@@ -141,13 +141,13 @@ npm start
 
 ---
 
-## 参与贡献
+## 🤝 参与贡献
 
 欢迎新增方法论包、路由测试、输出契约改进和 MCP Client 示例。
 
 ---
 
-## 许可证
+## 📄 许可证
 
 MIT
 
