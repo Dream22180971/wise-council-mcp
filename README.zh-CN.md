@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Space+Grotesk&weight=700&size=30&duration=2300&pause=900&color=8B5CF6&center=true&vCenter=true&width=900&lines=MULTIPLE+FRAMEWORKS%2C+ONE+QUESTION;AN+MCP+COUNCIL+FOR+STRUCTURED+DELIBERATION" alt="Typing SVG" />
-
 # 智囊团 MCP · Wise Council
 
 **通过 MCP，把不同方法论放进同一场结构化讨论。**
