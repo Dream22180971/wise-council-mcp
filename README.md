@@ -28,7 +28,7 @@ The emphasis is on structured disagreement:
 
 ---
 
-## How it works
+## 🔄 How it works
 
 ```mermaid
 flowchart LR
@@ -64,7 +64,7 @@ npm run dev
 
 ---
 
-## Design
+## 🧩 Design
 
 The server separates three responsibilities:
 
@@ -78,7 +78,7 @@ A perspective is treated as a reasoning method, not as an attempt to impersonate
 
 ---
 
-## Output Contract
+## 📋 Output Contract
 
 A useful response format is:
 
@@ -103,7 +103,7 @@ Meeting notes then preserve:
 
 ---
 
-## MCP Use Cases
+## 🧠 MCP Use Cases
 
 - product trade-offs
 - architecture discussions
@@ -117,7 +117,7 @@ The tool is designed to add perspectives, not make decisions on behalf of the us
 
 ---
 
-## Project Commands
+## 🛠 Project Commands
 
 ```bash
 npm run dev
