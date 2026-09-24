@@ -15,7 +15,7 @@
 
 ---
 
-## What it is
+## 🎯 What it is
 
 Wise Council MCP is an MCP server that routes one question through multiple **methodology-based perspectives** instead of forcing a single synthetic answer.
 
@@ -45,7 +45,7 @@ The project intentionally avoids collapsing every perspective into one “perfec
 
 ---
 
-## Quick Start
+## ⚡ Quick Start
 
 ```bash
 git clone https://github.com/Dream22180971/wise-council-mcp.git
@@ -127,7 +127,7 @@ npm start
 
 ---
 
-## Roadmap
+## 🗺 Roadmap
 
 - [x] MCP server skeleton
 - [x] Question routing
@@ -141,13 +141,13 @@ npm start
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Useful contributions include new methodology packs, routing tests, output-contract improvements and MCP client examples.
 
 ---
 
-## License
+## 📄 License
 
 MIT
 
