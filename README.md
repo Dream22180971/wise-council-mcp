@@ -1,3 +1,36 @@
+Bring multiple contrasting decision frameworks into one MCP-powered council. / 通过 MCP 把不同方法论放进同一场“智囊团”决策讨论。
+
+<!-- README-V2-BILINGUAL -->
+
+# wise-council-mcp
+
+> **EN:** Bring multiple contrasting decision frameworks into one MCP-powered council.  
+> **中文：** 通过 MCP 把不同方法论放进同一场“智囊团”决策讨论。
+
+## Demo / 演示
+
+No real GIF/video asset is stored yet; the Mermaid flow and usage details remain below. / 当前尚无真实 GIF/视频素材，下方保留流程图和使用说明。
+
+## Quick Start / 5 分钟快速开始
+
+```bash
+git clone https://github.com/Dream22180971/wise-council-mcp.git
+cd wise-council-mcp
+npm install
+npm run build
+```
+
+> **EN:** Clone, install, run. Advanced configuration and project-specific details are documented below.  
+> **中文：** 克隆、安装、运行即可开始。高级配置和项目特定说明继续保留在下方。
+
+## Why this project / 为什么做这个项目
+
+**EN:** This project starts from one concrete problem and prioritizes being understandable, runnable and useful before becoming complex.
+
+**中文：** 这个项目从一个明确问题出发，优先做到易理解、能运行、真正有用，再逐步增加复杂能力。
+
+---
+
 <div align="center">
 
 # 🌙 智囊团 MCP
