@@ -1,51 +1,51 @@
 <div align="center">
 
-# Wise Council MCP
+# 智囊团 MCP · Wise Council
 
-**Bring multiple contrasting decision frameworks into one MCP-powered council.**
+**通过 MCP，把不同方法论放进同一场结构化讨论。**
 
-[English](./README.md) | [简体中文](./README.zh-CN.md)
+[简体中文](./README.md) | [English](./README.en.md)
 
 [![MCP](https://img.shields.io/badge/MCP-Model+Context+Protocol-8B5CF6?style=for-the-badge)](https://modelcontextprotocol.io)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5%2B-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Version](https://img.shields.io/badge/version-1.0.0-F59E0B?style=for-the-badge)](./package.json)
-[![License](https://img.shields.io/badge/LICENSE-MIT-10B981?style=for-the-badge)](#license)
+[![License](https://img.shields.io/badge/LICENSE-MIT-10B981?style=for-the-badge)](#许可证)
 
 </div>
 
 ---
 
-## 🎯 What it is
+## 🎯 它是什么
 
-Wise Council MCP is an MCP server that routes one question through multiple **methodology-based perspectives** instead of forcing a single synthetic answer.
+Wise Council MCP 是一个 MCP Server。它不会把问题压成一个“统一答案”，而是让多个 **方法论视角** 独立看同一个问题。
 
-The emphasis is on structured disagreement:
+重点是保留结构化分歧：
 
-- different frameworks inspect the same question
-- each perspective states a position and reasoning
-- the final output preserves agreement, disagreement and open questions
-- the user keeps the final decision
+- 不同方法论检查同一个问题
+- 每个视角独立给出立场和理由
+- 最终纪要保留共识、分歧和待确认问题
+- 最终决定仍然由用户自己完成
 
 ---
 
-## 🔄 How it works
+## 🔄 工作方式
 
 ```mermaid
 flowchart LR
-    Q[Your question] --> R[Router]
-    R --> D[Work / Product / Technology Desk]
-    R --> N[Life / Reflection Desk]
-    D --> P[Selected Perspectives]
+    Q[你的问题] --> R[路由]
+    R --> D[事业 / 产品 / 技术桌]
+    R --> N[生活 / 反思桌]
+    D --> P[选择若干方法论视角]
     N --> P
-    P --> M[Meeting Notes]
-    M --> O[Agreement · Disagreement · Questions · Actions]
+    P --> M[会议纪要]
+    M --> O[共识 · 分歧 · 问题 · 行动项]
 ```
 
-The project intentionally avoids collapsing every perspective into one “perfect answer”. The disagreement is part of the output.
+这个项目故意不把所有观点揉成一个“正确答案”。分歧本身就是信息。
 
 ---
 
-## ⚡ Quick Start
+## ⚡ 快速开始
 
 ```bash
 git clone https://github.com/Dream22180971/wise-council-mcp.git
@@ -56,7 +56,7 @@ npm run build
 npm start
 ```
 
-For development:
+开发模式：
 
 ```bash
 npm run dev
@@ -64,60 +64,60 @@ npm run dev
 
 ---
 
-## 🧩 Design
+## 🧩 设计
 
-The server separates three responsibilities:
+Server 把流程分成三层：
 
-| Layer | Role |
+| 层 | 作用 |
 |---|---|
-| Router | decide which desk / perspective set fits the question |
-| Council | generate independent structured viewpoints |
-| Minutes | summarize agreements, disagreements, unresolved questions and actions |
+| 路由 | 判断问题更适合哪组视角 |
+| 圆桌 | 让不同方法论独立输出 |
+| 纪要 | 汇总共识、分歧、假设、问题与行动项 |
 
-A perspective is treated as a reasoning method, not as an attempt to impersonate a real person.
+项目强调“方法论”，而不是模仿某个真实人物本人。
 
 ---
 
-## 📋 Output Contract
+## 📋 输出契约
 
-A useful response format is:
+单个视角建议使用：
 
 ```text
-[Position]
-What this perspective would prioritize.
+【立场】
+这个视角会优先考虑什么。
 
-[Reasoning]
-Why it sees the problem this way.
+【理由】
+为什么它会这样判断。
 
-[Question]
-What it would ask before deciding.
+【反问】
+做决定之前还需要确认什么。
 ```
 
-Meeting notes then preserve:
+会议纪要保留：
 
-- common ground
-- unresolved disagreements
-- assumptions
-- questions for the user
-- concrete next actions
-
----
-
-## 🧠 MCP Use Cases
-
-- product trade-offs
-- architecture discussions
-- career decisions
-- writing critique
-- risk review
-- decision pre-mortems
-- “what am I missing?” prompts
-
-The tool is designed to add perspectives, not make decisions on behalf of the user.
+- 共识
+- 分歧
+- 隐含假设
+- 留给用户的问题
+- 下一步行动项
 
 ---
 
-## 🛠 Project Commands
+## 🧠 适合的 MCP 场景
+
+- 产品取舍
+- 架构讨论
+- 职业选择
+- 写作评审
+- 风险审查
+- Pre-mortem
+- “我还漏掉了什么”类问题
+
+它的目标是增加视角，不替用户做决定。
+
+---
+
+## 🛠 项目命令
 
 ```bash
 npm run dev
@@ -127,32 +127,32 @@ npm start
 
 ---
 
-## 🗺 Roadmap
+## 🗺 路线图
 
-- [x] MCP server skeleton
-- [x] Question routing
-- [x] Multiple perspective sets
-- [x] Structured meeting notes
-- [ ] Configurable perspective packs
-- [ ] User-defined councils
-- [ ] Better trace / observability
-- [ ] Evaluation set for routing quality
-- [ ] More MCP client examples
-
----
-
-## 🤝 Contributing
-
-Useful contributions include new methodology packs, routing tests, output-contract improvements and MCP client examples.
+- [x] MCP Server 骨架
+- [x] 问题路由
+- [x] 多视角讨论
+- [x] 结构化会议纪要
+- [ ] 可配置方法论包
+- [ ] 用户自定义 Council
+- [ ] 更好的调用链可观测性
+- [ ] 路由质量评测集
+- [ ] 更多 MCP Client 示例
 
 ---
 
-## 📄 License
+## 🤝 参与贡献
+
+欢迎新增方法论包、路由测试、输出契约改进和 MCP Client 示例。
+
+---
+
+## 📄 许可证
 
 MIT
 
 <div align="center">
 
-**One question. Several frameworks. The decision stays yours.**
+**一个问题，多种框架，决定仍然属于你。**
 
 </div>
